@@ -1,0 +1,2 @@
+# EasyShop
+EasyShop, an ecommerce application, is a mobile or desktop software that enables customers to buy products or services online from businesses. This application offer a similar set of features as ecommerce websites, including product catalogs, shopping carts, and payment gateways, but is designed specifically to be used on smartphones, tablets, or computers. Customers can browse and purchase items with ease, while businesses can manage their inventory, process orders, and engage with customers.
