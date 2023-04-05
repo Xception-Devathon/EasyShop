@@ -1,0 +1,48 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+    title: "EasyShop: Shop with Ease",
+    theme: ThemeData(primarySwatch: Colors.purple),
+    debugShowCheckedModeBanner: false,
+    home: const HomePage(),
+  ));
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Center(child: Text("EasyShop: Shop with Ease")),
+      ),
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        color: Colors.cyan[200],
+        child: Padding(
+          padding: const EdgeInsets.all(25.0),
+          child: Center(child: Image.asset("assets/logo.png")),
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: SizedBox(
+        height: 70,
+        width: 250,
+        child: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: Colors.purple,
+          splashColor: Colors.indigo,
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(30))),
+          child: Icon(
+            Icons.login,
+            color: Colors.black,
+          ),
+        ),
+      ),
+    );
+  }
+}
